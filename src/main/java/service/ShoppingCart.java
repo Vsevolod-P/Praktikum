@@ -19,9 +19,9 @@ public class ShoppingCart {
      public double getTotalPriceWithDiscount() {
         double total = 0;
         for (Food item : items) {
-            if (item instanceof Discountable) {
+            if (item.getDiscount() != 0) {
                 total = total + item.getTotalPrice() *  (1 - ((Discountable) item).getDiscount()/100);
-            } else {
+            }  else {
                 total = total + item.getTotalPrice();
             }
         }
