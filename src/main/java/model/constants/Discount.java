@@ -1,5 +1,5 @@
 package model.constants;
 
 public class Discount {
-    public static final double skidka = 60;
+    public static final double redAppleDiscount = 60.0;
 }
